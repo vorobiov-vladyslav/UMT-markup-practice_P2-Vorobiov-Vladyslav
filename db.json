@@ -1,0 +1,156 @@
+{
+  "bouquets": [
+    {
+      "name": "Spring Elegance",
+      "description": "A delicate blend of peonies, tulips, and roses — perfect for springtime gifting and bright smiles.",
+      "price": 35,
+      "category": "seasonal",
+      "featured": true,
+      "image": "images/spring-elegance.jpg",
+      "image2x": "images/spring-elegance@2x.jpg",
+      "alt": "Spring Elegance bouquet — peonies, tulips and roses"
+    },
+    {
+      "name": "Berry Chic",
+      "description": "A stylish composition of roses, seasonal greenery, and vibrant berries — a bold and elegant floral statement.",
+      "price": 40,
+      "category": "mixed",
+      "featured": true,
+      "image": "images/berry-chic.jpg",
+      "image2x": "images/berry-chic@2x.jpg",
+      "alt": "Berry Chic bouquet — roses, seasonal greenery and vibrant berries"
+    },
+    {
+      "name": "Lavender Dream",
+      "description": "A rich bouquet with lavender, lisianthus, and roses — ideal for those who love deep hues and gentle fragrance.",
+      "price": 55,
+      "category": "premium",
+      "featured": true,
+      "image": "images/lavender-dream.jpg",
+      "image2x": "images/lavender-dream@2x.jpg",
+      "alt": "Lavender Dream bouquet — lavender, lisianthus and roses"
+    },
+    {
+      "name": "Peach Meadow",
+      "description": "A soft and radiant arrangement of peach and blush roses with lush greenery in a straw basket — light and natural.",
+      "price": 55,
+      "category": "roses",
+      "featured": false,
+      "image": "images/peach-meadow.jpg",
+      "image2x": "images/peach-meadow@2x.jpg",
+      "alt": "Peach Meadow bouquet — peach and blush roses in a straw basket"
+    },
+    {
+      "name": "Blush Romance",
+      "description": "A premium bouquet of deep pink and ivory roses, complemented by silver eucalyptus — sophisticated and intimate.",
+      "price": 34,
+      "category": "premium",
+      "featured": false,
+      "image": "images/blush-romance.jpg",
+      "image2x": "images/blush-romance@2x.jpg",
+      "alt": "Blush Romance bouquet — deep pink and ivory roses with silver eucalyptus"
+    },
+    {
+      "name": "Pastel Garden",
+      "description": "A pastel-toned mix of spray roses and greenery in a woven basket — gentle, airy, and perfect for any occasion.",
+      "price": 40,
+      "category": "mixed",
+      "featured": false,
+      "image": "images/pastel-garden.jpg",
+      "image2x": "images/pastel-garden@2x.jpg",
+      "alt": "Pastel Garden bouquet — spray roses and greenery in a woven basket"
+    },
+    {
+      "name": "Tulip Charm",
+      "description": "A vivid bouquet of bright tulips and roses in a lavender box — cheerful and full of charm.",
+      "price": 61,
+      "category": "seasonal",
+      "featured": false,
+      "image": "images/tulip-charm.jpg",
+      "image2x": "images/tulip-charm@2x.jpg",
+      "alt": "Tulip Charm bouquet — bright tulips and roses in a lavender box"
+    },
+    {
+      "name": "Berry Bloom",
+      "description": "A lush mix of rich pink, purple, and cream blooms with textured greens — romantic and elegant.",
+      "price": 32,
+      "category": "mixed",
+      "featured": false,
+      "image": "images/berry-bloom.jpg",
+      "image2x": "images/berry-bloom@2x.jpg",
+      "alt": "Berry Bloom bouquet — pink, purple and cream blooms with textured greens"
+    },
+    {
+      "name": "Sweet Whisper",
+      "description": "A charming spring bouquet with peonies, roses, and lilac-toned accents — fresh, lively, and expressive.",
+      "price": 40,
+      "category": "seasonal",
+      "featured": false,
+      "image": "images/sweet-whisper.jpg",
+      "image2x": "images/sweet-whisper@2x.jpg",
+      "alt": "Sweet Whisper bouquet — peonies, roses and lilac-toned accents"
+    },
+    {
+      "name": "Field Joy",
+      "description": "A rustic hand-tied bouquet of sunflowers, lisianthus, and daisies — perfect for brightening the day.",
+      "price": 49,
+      "category": "seasonal",
+      "featured": false,
+      "image": "images/field-joy.jpg",
+      "image2x": "images/field-joy@2x.jpg",
+      "alt": "Field Joy bouquet — sunflowers, lisianthus and daisies"
+    },
+    {
+      "name": "Soft Bloom",
+      "description": "A delicate bouquet of pink carnations and roses wrapped in satin paper — soft, stylish, and versatile.",
+      "price": 37,
+      "category": "roses",
+      "featured": false,
+      "image": "images/soft-bloom.jpg",
+      "image2x": "images/soft-bloom@2x.jpg",
+      "alt": "Soft Bloom bouquet — pink carnations and roses wrapped in satin paper"
+    },
+    {
+      "name": "Rose Serenade",
+      "description": "An elegant gathering of garden roses and soft greenery — timeless, romantic, and made to impress.",
+      "price": 42,
+      "category": "roses",
+      "featured": false,
+      "image": "images/peach-meadow.jpg",
+      "image2x": "images/peach-meadow@2x.jpg",
+      "alt": "Rose Serenade bouquet — garden roses with soft greenery"
+    },
+    {
+      "name": "Garden Whisper",
+      "description": "A breezy mix of spray roses, eucalyptus, and seasonal blooms — light, natural, and effortlessly charming.",
+      "price": 38,
+      "category": "mixed",
+      "featured": false,
+      "image": "images/pastel-garden.jpg",
+      "image2x": "images/pastel-garden@2x.jpg",
+      "alt": "Garden Whisper bouquet — spray roses and eucalyptus in soft tones"
+    },
+    {
+      "name": "Autumn Glow",
+      "description": "Warm seasonal blooms with sunflowers and daisies — cheerful and full of late-summer warmth.",
+      "price": 45,
+      "category": "seasonal",
+      "featured": false,
+      "image": "images/field-joy.jpg",
+      "image2x": "images/field-joy@2x.jpg",
+      "alt": "Autumn Glow bouquet — sunflowers and daisies in warm tones"
+    },
+    {
+      "name": "Velvet Noir",
+      "description": "A luxe arrangement of deep roses and ivory accents with silver foliage — sophisticated and intimate.",
+      "price": 58,
+      "category": "premium",
+      "featured": false,
+      "image": "images/blush-romance.jpg",
+      "image2x": "images/blush-romance@2x.jpg",
+      "alt": "Velvet Noir bouquet — deep roses and ivory accents with silver foliage"
+    }
+  ],
+  "orders": [],
+  "subscribers": []
+}
