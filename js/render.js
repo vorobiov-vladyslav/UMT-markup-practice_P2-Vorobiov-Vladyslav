@@ -86,6 +86,23 @@ export function productDetailsTemplate(b) {
         </div>`;
 }
 
+// Testimonial card for the "What our clients says" section — quote + author.
+function testimonialCard(f) {
+  return `
+            <li class="testimonial">
+              <blockquote class="testimonial__quote">
+                <p>${esc(f.text)}</p>
+                <footer class="testimonial__author">${esc(f.author)}</footer>
+              </blockquote>
+            </li>`;
+}
+
+/** Append feedback cards to the testimonials list in one insertAdjacentHTML call. */
+export function renderTestimonials(container, items) {
+  const html = items.map(testimonialCard).join("");
+  container.insertAdjacentHTML("beforeend", html);
+}
+
 /** Replace a list's content with a single status message (loading / error / empty). */
 export function setListState(container, message, isError = false) {
   container.innerHTML = `<li class="list-state${

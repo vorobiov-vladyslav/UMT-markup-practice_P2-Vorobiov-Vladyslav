@@ -45,3 +45,9 @@ export async function postOrder(order) {
   const { data } = await http.post("/orders", order);
   return data;
 }
+
+/** Fetch client feedbacks shown in the "What our clients says" section. */
+export async function getFeedbacks() {
+  const { data } = await http.get("/feedbacks");
+  return data;
+}

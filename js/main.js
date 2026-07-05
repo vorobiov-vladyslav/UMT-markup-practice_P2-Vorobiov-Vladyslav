@@ -1,11 +1,18 @@
 // Entry point: render the Top-Selling carousel and boot the Bouquets catalogue.
-import { getBestsellers } from "./api.js";
-import { renderProducts, setListState, clearList, refreshAOS } from "./render.js";
+import { getBestsellers, getFeedbacks } from "./api.js";
+import {
+  renderProducts,
+  renderTestimonials,
+  setListState,
+  clearList,
+  refreshAOS,
+} from "./render.js";
 import { initBouquets } from "./bouquets.js";
 import { initModals } from "./modal.js";
 import { initOrder } from "./order.js";
 
 const carousel = document.querySelector(".top-selling__list");
+const testimonials = document.querySelector(".testimonials__list");
 
 async function loadBestsellers() {
   if (!carousel) return;
@@ -22,7 +29,23 @@ async function loadBestsellers() {
   }
 }
 
+async function loadFeedbacks() {
+  if (!testimonials) return;
+  setListState(testimonials, "Loading feedback…");
+  try {
+    const items = await getFeedbacks();
+    clearList(testimonials);
+    renderTestimonials(testimonials, items);
+  } catch (error) {
+    console.error("Failed to load feedback:", error);
+    setListState(testimonials, "Couldn't load feedback. Please try again later.", true);
+  } finally {
+    refreshAOS();
+  }
+}
+
 initModals();
 initOrder();
 loadBestsellers();
 initBouquets();
+loadFeedbacks();
