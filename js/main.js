@@ -10,9 +10,11 @@ import {
 import { initBouquets } from "./bouquets.js";
 import { initModals } from "./modal.js";
 import { initOrder } from "./order.js";
+import { initCarousels } from "./carousel.js";
 
 const carousel = document.querySelector(".top-selling__list");
 const testimonials = document.querySelector(".testimonials__list");
+const { refreshTop, refreshTestimonials } = initCarousels();
 
 async function loadBestsellers() {
   if (!carousel) return;
@@ -26,6 +28,7 @@ async function loadBestsellers() {
     setListState(carousel, "Couldn't load bestsellers. Please try again later.", true);
   } finally {
     refreshAOS();
+    refreshTop();
   }
 }
 
@@ -41,6 +44,7 @@ async function loadFeedbacks() {
     setListState(testimonials, "Couldn't load feedback. Please try again later.", true);
   } finally {
     refreshAOS();
+    refreshTestimonials();
   }
 }
 

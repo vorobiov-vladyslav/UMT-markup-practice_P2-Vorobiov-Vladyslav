@@ -660,37 +660,34 @@ button {
 }
 
 .top-selling__list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
-/* Mobile: simulated carousel — show only the first card */
-.top-selling__list > .product:nth-child(n + 2) {
+.top-selling__list::-webkit-scrollbar {
   display: none;
 }
 
+/* One card per view on mobile; the arrows page through the rest. */
+.top-selling__list > .product {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
 @media (min-width: 768px) {
-  .top-selling__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .top-selling__list > .product:nth-child(n + 2) {
-    display: flex;
-  }
-
-  .top-selling__list > .product:nth-child(n + 3) {
-    display: none;
+  .top-selling__list > .product {
+    flex-basis: calc((100% - 32px) / 2);
   }
 }
 
 @media (min-width: 1024px) {
-  .top-selling__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .top-selling__list > .product:nth-child(n + 3) {
-    display: flex;
+  .top-selling__list > .product {
+    flex-basis: calc((100% - 64px) / 3);
   }
 }
 
@@ -767,6 +764,7 @@ button {
 /* Async list status (loading / empty / error) — spans the full grid row */
 .list-state {
   grid-column: 1 / -1;
+  flex: 1 0 100%;
   padding: 40px 0;
   text-align: center;
   color: var(--color-muted);
@@ -833,6 +831,16 @@ button {
 .carousel-arrow:focus-visible {
   background-color: #d9fbcf;
   transform: translateY(-1px);
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.carousel-arrow:disabled:hover {
+  background-color: var(--color-bg);
+  transform: none;
 }
 
 .carousel-arrow svg {
@@ -955,37 +963,34 @@ button {
 }
 
 .testimonials__list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
-/* Mobile: simulated carousel — show only the first testimonial */
-.testimonials__list > .testimonial:nth-child(n + 2) {
+.testimonials__list::-webkit-scrollbar {
   display: none;
 }
 
+/* One testimonial per view on mobile; the arrows page through the rest. */
+.testimonials__list > .testimonial {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
 @media (min-width: 768px) {
-  .testimonials__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .testimonials__list > .testimonial:nth-child(n + 2) {
-    display: block;
-  }
-
-  .testimonials__list > .testimonial:nth-child(n + 3) {
-    display: none;
+  .testimonials__list > .testimonial {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
 @media (min-width: 1024px) {
-  .testimonials__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .testimonials__list > .testimonial:nth-child(n + 3) {
-    display: block;
+  .testimonials__list > .testimonial {
+    flex-basis: calc((100% - 48px) / 3);
   }
 }
 
